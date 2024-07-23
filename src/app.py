@@ -4,7 +4,7 @@ from config import config
 from routes import record_routes
 
 app = Flask(__name__)
-CORS(app)  # Habilita CORS para todas las rutas
+CORS(app)
 
 def page_not_found(error):
     return "<h1>No encontrado</h1>", 404

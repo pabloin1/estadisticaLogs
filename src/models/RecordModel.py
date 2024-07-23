@@ -1,9 +1,8 @@
-from database.db import get_connection
+from src.database.db import get_connection
 from .entities.Record import Record
 import numpy as np
 
 class recordModel():
-    
     @classmethod
     def get_records(cls):
         try:
@@ -65,3 +64,4 @@ class recordModel():
             return statistics
         except Exception as ex:
             raise Exception(f"Error calculating statistics: {ex}")
+        

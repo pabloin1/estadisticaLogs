@@ -1,4 +1,4 @@
-from database.db import get_connection
+from src.database.db import get_connection
 from .entities.Record import Record
 
 class recordModel():
